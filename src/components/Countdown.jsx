@@ -2,11 +2,28 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 const messages = [
+  'Aap har saal aur zyada cute kaise ho jaate ho? 😭',
   'Every day with you still feels like magic ❤️',
-  'Birthday aa raha hai… ready ho jao extra pampering ke liye 😌',
-  'You became my safest place without even trying 🥹',
-  'How are you becoming cuter every year, my sweet teddy bear? 😭',
-  'Even the stars look softer when I think about you ✨',
+  'Birthday aa raha hai… ready ho jaiye extra pampering ke liye 😌',
+  'Aap bina try kiye hi meri safest place ban gaye 🥹',
+  'Aapke baare mein sochu toh stars bhi zyada pretty lagte hain ✨',
+  'Kabhi kabhi lagta hai aap husband kam, full-time distraction zyada ho 😏',
+  'Warning: Birthday ke baad kisses ki quantity dangerously increase hone wali hai 💋',
+  'Aapke hugs honestly meri therapy hain 🥺❤️',
+  'Aaj bhi jab aap mujhe apna bolte ho toh blush aa jata hai 😭',
+  'Mujhe aaj bhi aapke saath flirt karna utna hi pasand hai 😌',
+  'You + Me = permanently obsessed situation 💞',
+  'Dil aaj bhi bolta hai — “ye handsome banda mera husband kaise ban gaya?” 😭',
+  'Aapki voice mere worst days bhi better bana deti hai ❤️',
+  'Aapke bina ghar ghar nahi lagta 🥹',
+  'Sach bolu toh aap har saal aur zyada hot lagne lagte ho 😮‍💨🔥',
+  'Official notice: birthday boy deserves unlimited cuddles tonight 😌',
+  'Aapki smile meri favorite addiction hai ❤️',
+  'Pata nahi kaise… but aapke saath boring days bhi romantic lagte hain ✨',
+  'Forever aapko irritate karna hi meri love language hai 😭❤️',
+  'Bas ek problem hai… aap itne cute kyun ho? Control hi nahi hota 😏💋',
+  'Aapko pata hai? Aaj bhi mera favorite place sirf aapki baahon mein hi hai 🥺❤️',
+  'Birthday boy ko officially warning — aaj extra romance, extra teasing aur extra kisses milne wali hain 😏💋'
 ]
 
 export default function Countdown({ setStage }) {
@@ -45,7 +62,14 @@ export default function Countdown({ setStage }) {
     return () => clearInterval(interval)
   }, [])
 
-  const message = messages[new Date().getDate() % messages.length]
+const today = new Date()
+const startDate = new Date('2026-05-19')
+const diffDays = Math.floor(
+  (today - startDate) / (1000 * 60 * 60 * 24)
+)
+
+const message =
+  messages[(diffDays + 1) % messages.length]
 
   return (
     <div
