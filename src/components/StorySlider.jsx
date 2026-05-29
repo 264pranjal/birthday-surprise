@@ -2,14 +2,97 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import MemoryCard from './MemoryCard'
 
-const memories = Array.from({ length: 15 }, (_, index) => ({
-  id: index + 1,
-  image: `https://picsum.photos/500/700?random=${index + 1}`,
-  message: `This is one of our cutest memories together ❤️
-  
-Every moment with you feels like home.
-And honestly… I’d relive this memory forever ✨`,
-}))
+const memories = [
+  {
+    id: 1,
+    image: '/images/memories/memory1.jpg',
+    message: `The day I realized I’m never getting enough of aap 😭❤️`,
+  },
+
+  {
+    id: 2,
+    image: '/images/memories/memory2.jpg',
+    message: `Aapke saath har normal moment bhi special lagta hai ✨`,
+  },
+
+  {
+    id: 3,
+    image: '/images/memories/memory3.jpg',
+    message: `Still can’t believe this handsome banda is my husband 😌❤️`,
+  },
+
+  {
+    id: 4,
+    image: '/images/memories/memory4.jpg',
+    message: `This was one of those moments where I just wanted time to stop 🥺`,
+  },
+
+  {
+    id: 5,
+    image: '/images/memories/memory5.jpg.JPG',
+    message: `Aapki smile = my instant happiness button 😭💖`,
+  },
+
+  {
+    id: 6,
+    image: '/images/memories/memory6.jpg.JPG',
+    message: `Every picture with aap automatically becomes my favorite 📸❤️`,
+  },
+
+  {
+    id: 7,
+    image: '/images/memories/memory7.jpg.JPG',
+    message: `Mujhe aaj bhi aapse flirt karna utna hi pasand hai 😏💋`,
+  },
+
+  {
+    id: 8,
+    image: '/images/memories/memory8.jpg.JPG',
+    message: `Aapke hugs honestly duniya ki safest jagah hain 🥺`,
+  },
+
+  {
+    id: 9,
+    image: '/images/memories/memory9.jpg.JPG',
+    message: `9 months… and still obsessed with aap 😭❤️`,
+  },
+
+  {
+    id: 10,
+    image: '/images/memories/memory10.jpg.JPG',
+    message: `Kabhi kabhi lagta hai aap cute hone ki overacting karte ho 😤❤️`,
+  },
+
+  {
+    id: 11,
+    image: '/images/memories/memory11.jpg.JPG',
+    message: `Aapke bina literally sab boring lagta hai 🥺`,
+  },
+
+  {
+    id: 12,
+    image: '/images/memories/memory12.jpg.JPG',
+    message: `This memory deserves replay forever ✨`,
+  },
+
+  {
+    id: 13,
+    image: '/images/memories/memory13.jpg.JPG',
+    message: `Warning: birthday ke baad kisses aur cuddles aur increase hone wale hain 😌💋`,
+  },
+
+  {
+    id: 14,
+    image: '/images/memories/memory14.jpg.JPG',
+    message: `Aap sirf husband nahi ho… mera comfort person ho ❤️`,
+  },
+
+  {
+    id: 15,
+    image: '/images/memories/memory15.jpg.JPG',
+    message: `And this is just the beginning of our forever 🥹✨❤️`,
+  },
+]
 
 export default function StorySlider({ setStage }) {
   const [current, setCurrent] = useState(0)
