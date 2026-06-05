@@ -29,67 +29,67 @@ const memories = [
 
   {
     id: 5,
-    image: '/images/memories/memory5.jpg.JPG',
+    image: '/images/memories/memory5.jpg',
     message: `Aapki smile = my instant happiness button 😭💖`,
   },
 
   {
     id: 6,
-    image: '/images/memories/memory6.jpg.JPG',
+    image: '/images/memories/memory6.jpg',
     message: `Every picture with aap automatically becomes my favorite 📸❤️`,
   },
 
   {
     id: 7,
-    image: '/images/memories/memory7.jpg.JPG',
+    image: '/images/memories/memory7.jpg',
     message: `Mujhe aaj bhi aapse flirt karna utna hi pasand hai 😏💋`,
   },
 
   {
     id: 8,
-    image: '/images/memories/memory8.jpg.JPG',
+    image: '/images/memories/memory8.jpg',
     message: `Aapke hugs honestly duniya ki safest jagah hain 🥺`,
   },
 
   {
     id: 9,
-    image: '/images/memories/memory9.jpg.JPG',
+    image: '/images/memories/memory9.jpg',
     message: `9 months… and still obsessed with aap 😭❤️`,
   },
 
   {
     id: 10,
-    image: '/images/memories/memory10.jpg.JPG',
+    image: '/images/memories/memory10.jpg',
     message: `Kabhi kabhi lagta hai aap cute hone ki overacting karte ho 😤❤️`,
   },
 
   {
     id: 11,
-    image: '/images/memories/memory11.jpg.JPG',
+    image: '/images/memories/memory11.jpg',
     message: `Aapke bina literally sab boring lagta hai 🥺`,
   },
 
   {
     id: 12,
-    image: '/images/memories/memory12.jpg.JPG',
+    image: '/images/memories/memory12.jpg',
     message: `This memory deserves replay forever ✨`,
   },
 
   {
     id: 13,
-    image: '/images/memories/memory13.jpg.JPG',
+    image: '/images/memories/memory13.jpg',
     message: `Warning: birthday ke baad kisses aur cuddles aur increase hone wale hain 😌💋`,
   },
 
   {
     id: 14,
-    image: '/images/memories/memory14.jpg.JPG',
+    image: '/images/memories/memory14.jpg',
     message: `Aap sirf husband nahi ho… mera comfort person ho ❤️`,
   },
 
   {
     id: 15,
-    image: '/images/memories/memory15.jpg.JPG',
+    image: '/images/memories/memory15.jpg',
     message: `And this is just the beginning of our forever 🥹✨❤️`,
   },
 ]

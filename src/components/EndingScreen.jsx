@@ -139,7 +139,7 @@ export default function EndingScreen() {
             color: '#ffe6f7',
           }}
         >
-          Forever Starts Again ✨
+          Happiest Birthday Again ✨
         </motion.p>
       </motion.div>
     </div>
