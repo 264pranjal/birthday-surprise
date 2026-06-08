@@ -6,91 +6,105 @@ const memories = [
   {
     id: 1,
     image: '/images/memories/memory1.jpg',
-    message: `The day I realized I’m never getting enough of aap 😭❤️`,
+    message: `Ek shuruaat jisne hme sirf milwaya hi nhi balki ek beautiful journey pe bhi le chala.
+
+              Vo apki biodata website, apki pheli pics jo maine dekhi aur meri pheli pic jo apne dekhi.
+
+              Aur phir aapne socha,
+              "Ye to meri league se bahar hai."
+
+              Toh bataiye Mr. Husband Ji...
+              Kya ab bhi kahenge ki main aapki league se bahar hoon? 😌❤️`,
   },
 
   {
     id: 2,
     image: '/images/memories/memory2.jpg',
-    message: `Aapke saath har normal moment bhi special lagta hai ✨`,
+    message: `Chalo a hi gya pheli mulakat ka din. 
+    Darte the jis din se, socha krte the kya hoga hm dono ki to ha hai, family ki ha hogi ki nhi. 
+    Pr dekho kya hua, aapne toh meri family ko bhi apna liya, aur mujhe bhi apna liya.
+    Fir jo journy shuru hui, usme har ek moment special tha, har ek memory priceless thi, aur har ek din ek nayi khushi lata rha.`
   },
 
   {
     id: 3,
     image: '/images/memories/memory3.jpg',
-    message: `Still can’t believe this handsome banda is my husband 😌❤️`,
+    message: `Hmari masti bhari video calls,hmari late night VCs. Hmari morning chats. Shadi se phele hr din ko mere khaas bnaya hai apne. `,
   },
 
   {
     id: 4,
     image: '/images/memories/memory4.jpg',
-    message: `This was one of those moments where I just wanted time to stop 🥺`,
+    message: `The 3rd meet in Delhi shoppping, jhn hm thoda sa shy the phele fir comfort me ate ate ek dusre ke sath time spend krne ke lia space dhundhne lage. 
+    Sube sube hmare room me jb aap aye the me uth gai thi apki voice se hi. Yaad hai vo moments, papa ka mobile car se lene jana aur akele thoda ghumna.`,
   },
 
   {
     id: 5,
     image: '/images/memories/memory5.jpg',
-    message: `Aapki smile = my instant happiness button 😭💖`,
+    message: `Dhurandhar- First movie together, jhn hm dono ne ek dusre ke sath movie dekhne ka maza liya.You know what I mean.`,
   },
 
   {
     id: 6,
     image: '/images/memories/memory6.jpg',
-    message: `Every picture with aap automatically becomes my favorite 📸❤️`,
+    message: `Apko khana khilate hua jb mummy ne hmari pics li thi yaad hai ji.`,
   },
 
   {
     id: 7,
     image: '/images/memories/memory7.jpg',
-    message: `Mujhe aaj bhi aapse flirt karna utna hi pasand hai 😏💋`,
+    message: `Haldi pr pheli baar ek dusre ko dekhna shadi ki rasom me, full mast zone me rhena and vo apka I love you bolna.`,
   },
 
   {
     id: 8,
     image: '/images/memories/memory8.jpg',
-    message: `Aapke hugs honestly duniya ki safest jagah hain 🥺`,
+    message: `Dance aur Engagament ke beech mera dhyaan rkhna aur sath me full enjoy krna. `,
   },
 
   {
     id: 9,
     image: '/images/memories/memory9.jpg',
-    message: `9 months… and still obsessed with aap 😭❤️`,
+    message: `A hi gya vo pal shadi hai hmari aaj stage pr itne free the ki baaton me lage the hm dono mast maze se. `,
   },
 
   {
     id: 10,
     image: '/images/memories/memory10.jpg',
-    message: `Kabhi kabhi lagta hai aap cute hone ki overacting karte ho 😤❤️`,
+    message: `Shuru kre honeymoon ki journey airport pr jake jo pasar gye the hm dono seating beds pr. `,
   },
 
   {
     id: 11,
     image: '/images/memories/memory11.jpg',
-    message: `Aapke bina literally sab boring lagta hai 🥺`,
+    message: `Harry potter bus ke jhatke to yaad hi honge ji, aur mera apko pyaar se dekhna bhi. Love you meri jaan ❤️`,
   },
 
   {
     id: 12,
     image: '/images/memories/memory12.jpg',
-    message: `This memory deserves replay forever ✨`,
+    message: `Mummy ke birthday pr ghr ki pheli visit after shadi and vo scooty pr ghumna apka aur mera, chat and burger khana aur mere hath ke prathe bhi pheli baar jb mera bnya hua kuch khaya tha apne. `,
   },
 
   {
     id: 13,
     image: '/images/memories/memory13.jpg',
-    message: `Warning: birthday ke baad kisses aur cuddles aur increase hone wale hain 😌💋`,
+    message: `Late night movie show and mera bolna papa se puch lu jau ki nhi, fir yaad aya ab to shadi ho gai hai ab to ja skti hu.😂`,
   },
 
   {
     id: 14,
     image: '/images/memories/memory14.jpg',
-    message: `Aap sirf husband nahi ho… mera comfort person ho ❤️`,
+    message: `Lets play Carrom. 
+    Yes yes I won every time. Kitna maza aya tha na hm south jakr carrom khel rhe the. `,
   },
 
   {
     id: 15,
     image: '/images/memories/memory15.jpg',
-    message: `And this is just the beginning of our forever 🥹✨❤️`,
+    message: `Apka surprise mere lia. Bhot bhot pyaar tha sachi me. Bhot maza aya tha apke sath hr jgh hi maza ata. 
+    And apke surprises hmesha ek dm best hote sachi me. Love you soooo much. 🥹✨❤️`,
   },
 ]
 
@@ -182,6 +196,8 @@ export default function StorySlider({ setStage }) {
             width: '100%',
             display: 'flex',
             justifyContent: 'center',
+            whiteSpace: 'pre-line',
+            lineHeight: '1.8',
           }}
         >
           <MemoryCard memory={memories[current]} />
